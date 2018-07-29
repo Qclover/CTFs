@@ -19,14 +19,15 @@ Function BOX :
   input(strA,strB)
   output(strA^strB)
   annotation:According to the shortest traversal
-````
-
 
 
 Sample topic<Thank to P1an019横渡大海会断魂>：
+
 ciphertext:0000011000000000101010110111001011000101100000111001100100111100111001
+
 keyt:helloworld
-````
+
+
 ---------------------------------------------------------------------------------
 Program output：
 ---------------------------------------------------------------------------------
