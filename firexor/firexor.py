@@ -20,5 +20,5 @@ f.close()
 #对密文和密钥进行按位异或
 for i in range(len(ciphertext)):
 
-    print(chr(ord(ciphertext[i])^ord(plaintext[i])),end="")
+    print(chr(ord(ciphertext[i])^ord(keyt[i])),end="")
 
