@@ -29,6 +29,7 @@ nian-hua
 
 Some places to pay attention to：
   alphabet is variable, But it needs to be consistent. 
+  Although there are many base64/base32 programs, this program can set the alphabet by itself. I think this is the best place.
 ````
 
 
