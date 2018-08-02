@@ -34,13 +34,13 @@ def FindStr():
         
         if len(a) > 1 :         #如果检索到大于一个相同的字符串
             
-            for j in kasialp:       #遍历kasialp集合
+            for j in kasialp:       #遍历kasialp字典
 
-                if j == ciphertext[i:i+int(kasNum)]:    #如果集合中已经有了这个字符串，那么就跳过(其实我觉得如果在re之前先判断一下，程序的复杂度会更低)
+                if j == ciphertext[i:i+int(kasNum)]:    #如果字典中已经有了这个字符串，那么就跳过(其实我觉得如果在re之前先判断一下，程序的复杂度会更低)
 
                     continue
 
-            kasialp[ciphertext[i:i+int(kasNum)]] = a[1] - a[0]      #集合中没有这个字符串，将其存入集合
+            kasialp[ciphertext[i:i+int(kasNum)]] = a[1] - a[0]      #字典中没有这个字符串，将其前两个匹配到的字符串距离存入字典
     
     print(kasialp)      #打印出来看一看哈哈哈哈
 
@@ -48,10 +48,9 @@ def SeekFac(name,num):
 
     #没有写1 是因为1是不可能出现，密钥长度为1说明是凯撒
 
+    kasfac[name] = set()    #在kasfac中创建一个集合
 
-    kasfac[name] = set()
-
-    for i in range(num):
+    for i in range(num):    #求出num的所有约数，放入集合
 
         for j in range(num):
 
@@ -63,13 +62,13 @@ def SeekFac(name,num):
    
 def Handle():
 
-    for i in kasialp:
+    for i in kasialp:   #循环刚刚的字典
 
-        SeekFac(i,kasialp[i])
+        SeekFac(i,kasialp[i])   #使用SeekFac对取出来的键值进行处理
 
-        print("%s:%s"%(i,kasfac[i]))
+        print("%s:%s"%(i,kasfac[i]))    #打印每个字符串对应的约数
 
-        for j in kasfac[i]:
+        for j in kasfac[i]:         #提前赋值
 
             passnum[j] = 0
     
@@ -77,15 +76,16 @@ def Handle():
 
     print("统计密钥长度可能性:")
 
-    for i in kasialp:
+    for i in kasialp:       #统计每个因子出现的次数
 
         for j in kasfac[i]:
 
             passnum[j] += 1
 
-    passnum_t = sorted(passnum.items(),key=operator.itemgetter(1),reverse = True)
+    passnum_t = sorted(passnum.items(),key=operator.itemgetter(1),reverse = True)   #排序输出
 
     print("因子:次数")
+    
     for i,j in passnum_t:
 
         print("%3d:%3d"%(i,j))
