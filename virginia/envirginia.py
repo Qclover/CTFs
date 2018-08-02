@@ -17,9 +17,7 @@ def Scanf():
 
 def AlphaMove(alpha,drift):
 
-
     return(alphabet[(alphabet.find(alpha)+drift)%26])
-
 
 
 def EnCryption():
@@ -36,7 +34,6 @@ def main():
     Scanf()
     
     EnCryption()
-
 
 
 if "__main__" == __name__:
