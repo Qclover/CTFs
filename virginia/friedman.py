@@ -43,7 +43,7 @@ def main():
 
     Scanf()  #接收程序输入
 
-    for i in range(20):
+    for i in range(10):   #猜测密钥的长度大概是多少，例如这个就是1~10
 
         friedman(i)
         
