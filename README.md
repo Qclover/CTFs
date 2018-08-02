@@ -7,3 +7,4 @@ Some methods of common cryptography
 ### 4.caesar&nbsp;&nbsp;&nbsp;--> 凯撒密码破解
 ### 5.firexor&nbsp;&nbsp;--> 文件异或函数
 ### 6.thomas&nbsp;--> 托马斯转盘加密
+### 7.virginia--> 维吉尼亚密码
