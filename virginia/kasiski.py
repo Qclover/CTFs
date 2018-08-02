@@ -12,6 +12,7 @@ kasfac = {} #根据间距计算出了 所有可能的公因子
 
 passnum = {} #对共因子进行处理 统计 ，最终显示的就是这个字典
 
+#用来输入的函数····这个看看就好。
 def Scanf():
 
     global ciphertext,kasNum
@@ -22,24 +23,24 @@ def Scanf():
 
     print("如果没有找到相似字符串，请降低最短相似长度\n如果没有找到相同公因子，请增加最短相似长度")
 
-
+#FindStr函数是用来检索相同字符串的
 def FindStr():
 
-    for i in range(len(ciphertext)-int(kasNum)):
+    for i in range(len(ciphertext)-int(kasNum)):        #kasNum是相同字母大小，也就是循环(总密文-相同字母大小)次
 
-        a = [first.start() for first in re.finditer(ciphertext[i:i+int(kasNum)], ciphertext)]
+        a = [first.start() for first in re.finditer(ciphertext[i:i+int(kasNum)], ciphertext)]   #从当前选取kasNum个字符，使用re模块检索，返回一个数组(数组包含每个检索到的字符串下表)
         
-        if len(a) > 1 :
+        if len(a) > 1 :         #如果检索到大于一个相同的字符串
             
-            for j in kasialp:
+            for j in kasialp:       #遍历kasialp集合
 
-                if j == ciphertext[i:i+int(kasNum)]:
+                if j == ciphertext[i:i+int(kasNum)]:    #如果集合中已经有了这个字符串，那么就跳过(其实我觉得如果在re之前先判断一下，程序的复杂度会更低)
 
                     continue
 
-            kasialp[ciphertext[i:i+int(kasNum)]] = a[1] - a[0]
+            kasialp[ciphertext[i:i+int(kasNum)]] = a[1] - a[0]      #集合中没有这个字符串，将其存入集合
     
-    print(kasialp)
+    print(kasialp)      #打印出来看一看哈哈哈哈
 
 def SeekFac(name,num):
 
