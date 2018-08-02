@@ -13,6 +13,9 @@ Ps.算了算了··· 还是写中文吧，谷歌翻译用的要死要死的。
   就是常规的维吉尼亚解密
 文件:kasiski.py
   卡西斯基测试，主要是用来确定密文中密钥长度的算法，举例如下：
+---------------------------------------------------------------------------------------
+ 以下是程序示例输出：
+---------------------------------------------------------------------------------------
 └──╼ $python3 kasiski.py 
 请输入密文:gpeflwhnbsnyytumpylushzaosyrrauyamosbhrtunltigafepwnspxeabinsinraiuhpetqvruutowyfhhdlwuangeaacybvsnvdnajrrxaehnoegspoioyaigousomeatsfbzthuyfbzsbpwoaaiqlligbouhpeomeailohohgphtbqngpgagmrrsutvwnfdctuueadbonzeshclhzefuitgpeqvqnnvdbbnmrvbhanhbaejoiaemsgyogttianulbvgqpmsnbifmceqeigoqhnbtulsaemdbphgjpagmulfmaakqrbvggyuiaqntousswrplxtummgvxozinlvztumsrkyscwnqlhtnvdhzylraszlhhndeolyntciqlxiabocsucrawullegpelmctjpeelnhrzevzwoaaeecutvwnbmynrzgloupcqnrzmaalrrzolgatulmenzegoyfnktbymfbzazlhtntllhhdcpyfpwaytyohfaakeqtunczoipxeqpeuhmhnlenyfyvvsgyocgqoaphsbueipnayuagayrfbhrpgphtsraihndegoyfhbuelzagpeezcnnxofpnibvtbnoiqmaakfiimiajfofmcbuziqmngpulemlnacoaawvabtumiezinfqsgoyrrisbuzoebhvzvobspevzefaibuulrfpryceakeuhmpewvrunozgcbtjlrbefhnifnapacoabhnanhruaafzavtuelmmvafvamdrapbuxeabsnuxdvaenzydvvohyjrraeaaaeamrnacoaeeelhognuakumrvtnsfyvtlspntrltbiutgtejpnhyqfriotgpagabelpaquyvrzbrlhsgirglxrvohgwbyfqcnsfyzmnghflldophnibvaysspugsvjulvvsgyocgwrfioiybmhzwlrbenjbeeafbywequupoosrnuyhhdntsbbmeymsfznusniaaiuaeiyscntjrnphcrtlfmutumrfmoraqsulxtummbuyynaaebfevniaknhnbtupmlnbtryqafibbbnayttuljaemngzxiqnueucsuinqabohohgabifilyzofsqcvlhtgpeelmuybsuhpeomeakypywrnifejisglxeamrtpysqqstbmtswrfaodlqnyphefbhnaheimrnwjenteqtcsqqrrjneqxojllsnvdrebahatrkpitwrvzqhnbiuhpeqiiyfmervfbynwrvtlmcvrgenymaalmbznosbhrzycbvdvacoaaaeluvbqdnifeuwwsyyqhmngsshndevoyaeltullezirxhztrzekwfavviannongohuamnvwuvwazmtbtyapwmcsytrnavsorrehlkcdabmlmutumrflyayttupmoeqwnuneqboqvnhnbdbjnoejugabelaavknhnbiqpxngsnbdgybenzphdfwtulsmnlezlmthlygocntatuhniuitrknhrvtulpigilshwtfehvjbeimrliiyfpohsxenzllouvrkoamcdrvtvhfllinqjbuzuiyfnoylhvtihqwcgvlisqhnkinygkavqngpeflnhvvgfaynlmaezugbehnaudvnfryynguaapqohtdolnoqiyllmaalybblsbvsphhbrvespnfewmlvorrfpryceakesvligpafmirpmdzlnoppagdctubhrtcngpefljatmszfjlnvafvotyqnrkcsgwgvcytumbbfunqgohabtumiamirzitvvhwuqcudclymnnifeuqmgvwoaaeecyhvaeallgvmsvuwrrisrocsiqgbyunqtenyhjhatjoutuqszlhtnteakiwzmnghhdcwwrymaemtulhtbkoajyngzaglopbvtulmepwnfaungtynsfojqntkyvvitvvhsbvllzifnzafabeljrbhxeabhroirvhoazorewuakcntpifcicnbibunhrzensmovamhjbtbaalbjoaxhlzccntcbumeedagpingpefairvvgbmjhlaiphfvvooedbippialgeeoeajcefkaaiycntlrkopbvwvabohbiaqorlbogoywbzkvuacnxighftuqsipnayuagayruisflfdbubrlhtbcculxiabhralavvianifbcrlvotuaaakuszmnjlzialtulgwbzkvuaucbogoylnatqlarrmoswiwrzaakqhrvtulwaytcbtysswrrenrnxojlltumrrpmnbvegoymnvtulhgbmsgvnhrpuzhhdhupcpfegpeelcsawekjosrnoeabifaaqznagmoshzfnqrfabepiuflcsvonbyunpmostunfdighfrraohywefinqoiwgwcbumeedegovolaiuhpeomeahleciiellospuzhhmnkhvuysntlzffismmnjbiamsflhtbctbunhrzonkhogxrbwyrygaqqosgmdgoyyuivriyeazegblnrltbtssuwpnuxwvbhzvmtbntulgipwuykinygpbphtbctplltnqnchltfehvjbwrzejluknvdylntummtvugnqngheiaocnyynbbtbwotgwotyyagisgyuiawngoysrxaeamnbeijhhtlwunsftbatnynohbwvabeimrlwurgjrnphbblynuxsbclrxoaytynkdufbeqhflbntulmazmsgyintuagllintwrsffvbtrknojwrxphpricroupcqnrzmaalhrhftubhrzyfnktbymrxqntphhnzmbusmrinfzocpmsfuimnbtryqhnblvuyybctnryucnoescfrawbye
 请输入最短相似长度（一般为3或4或更长）3
@@ -628,7 +631,7 @@ int:{2, 4}
 137:  5
 106:  5
 334:  5
-1169:  5
+1169: 5
 329:  5
 209:  5
 189:  5
@@ -700,7 +703,7 @@ int:{2, 4}
 103:  2
 263:  2
 364:  2
-1274:  2
+1274: 2
 637:  2
 190:  2
 281:  2
@@ -717,7 +720,7 @@ int:{2, 4}
 513:  2
 693:  2
 462:  2
-1029:  2
+1029: 2
 157:  2
 135:  2
 110:  2
@@ -760,7 +763,7 @@ int:{2, 4}
 138:  1
 276:  1
 552:  1
-1104:  1
+1104: 1
 736:  1
 368:  1
 169:  1
@@ -788,7 +791,7 @@ int:{2, 4}
 247:  1
 358:  1
 716:  1
-1050:  1
+1050: 1
 300:  1
 868:  1
 434:  1
@@ -796,7 +799,7 @@ int:{2, 4}
 124:  1
 374:  1
 187:  1
-1309:  1
+1309: 1
 855:  1
 285:  1
 279:  1
@@ -805,7 +808,7 @@ int:{2, 4}
 142:  1
 550:  1
 440:  1
-1100:  1
+1100: 1
  88:  1
 220:  1
 901:  1
@@ -820,7 +823,7 @@ int:{2, 4}
 776:  1
 291:  1
 194:  1
-1164:  1
+1164: 1
 332:  1
 830:  1
 237:  1
@@ -837,7 +840,7 @@ int:{2, 4}
 678:  1
 113:  1
 339:  1
-1017:  1
+1017: 1
 149:  1
 539:  1
 317:  1
@@ -850,7 +853,7 @@ int:{2, 4}
 341:  1
 361:  1
 722:  1
-1083:  1
+1083: 1
 419:  1
 257:  1
 429:  1
@@ -893,8 +896,10 @@ int:{2, 4}
 244:  1
 163:  1
 130:  1
-  
-  
+---------------------------------------------------------------------------------------
+ 程序输出结束。
+---------------------------------------------------------------------------------------
+首先程序对长度为3的字符串进行了遍历
   
 ````
 
