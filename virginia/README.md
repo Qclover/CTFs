@@ -60,5 +60,75 @@ rra:{109, 7}
 ````
  程序的逻辑可以参见注释</br>
  在这个示例里，大致可以看出是<密钥长度为7>
+ 
+文件:friedman.py</br>
+&nbsp;&nbsp;使用重合指数法测试密钥长度（Index of Coincidence）</br>
+````
+---------------------------------------------------------------------------------------
+ 以下是程序示例输出：
+---------------------------------------------------------------------------------------
+└──╼ #python3 friedman.py 
+请输入密文:gpeflwhnbsnyytumpylushzaosyrrauyamosbhrtunltigafepwnspxeabinsinraiuhpetqvruutowyfhhdlwuangeaacybvsnvdnajrrxaehnoegspoioyaigousomeatsfbzthuyfbzsbpwoaaiqlligbouhpeomeailohohgphtbqngpgagmrrsutvwnfdctuueadbonzeshclhzefuitgpeqvqnnvdbbnmrvbhanhbaejoiaemsgyogttianulbvgqpmsnbifmceqeigoqhnbtulsaemdbphgjpagmulfmaakqrbvggyuiaqntousswrplxtummgvxozinlvztumsrkyscwnqlhtnvdhzylraszlhhndeolyntciqlxiabocsucrawullegpelmctjpeelnhrzevzwoaaeecutvwnbmynrzgloupcqnrzmaalrrzolgatulmenzegoyfnktbymfbzazlhtntllhhdcpyfpwaytyohfaakeqtunczoipxeqpeuhmhnlenyfyvvsgyocgqoaphsbueipnayuagayrfbhrpgphtsraihndegoyfhbuelzagpeezcnnxofpnibvtbnoiqmaakfiimiajfofmcbuziqmngpulemlnacoaawvabtumiezinfqsgoyrrisbuzoebhvzvobspevzefaibuulrfpryceakeuhmpewvrunozgcbtjlrbefhnifnapacoabhnanhruaafzavtuelmmvafvamdrapbuxeabsnuxdvaenzydvvohyjrraeaaaeamrnacoaeeelhognuakumrvtnsfyvtlspntrltbiutgtejpnhyqfriotgpagabelpaquyvrzbrlhsgirglxrvohgwbyfqcnsfyzmnghflldophnibvaysspugsvjulvvsgyocgwrfioiybmhzwlrbenjbeeafbywequupoosrnuyhhdntsbbmeymsfznusniaaiuaeiyscntjrnphcrtlfmutumrfmoraqsulxtummbuyynaaebfevniaknhnbtupmlnbtryqafibbbnayttuljaemngzxiqnueucsuinqabohohgabifilyzofsqcvlhtgpeelmuybsuhpeomeakypywrnifejisglxeamrtpysqqstbmtswrfaodlqnyphefbhnaheimrnwjenteqtcsqqrrjneqxojllsnvdrebahatrkpitwrvzqhnbiuhpeqiiyfmervfbynwrvtlmcvrgenymaalmbznosbhrzycbvdvacoaaaeluvbqdnifeuwwsyyqhmngsshndevoyaeltullezirxhztrzekwfavviannongohuamnvwuvwazmtbtyapwmcsytrnavsorrehlkcdabmlmutumrflyayttupmoeqwnuneqboqvnhnbdbjnoejugabelaavknhnbiqpxngsnbdgybenzphdfwtulsmnlezlmthlygocntatuhniuitrknhrvtulpigilshwtfehvjbeimrliiyfpohsxenzllouvrkoamcdrvtvhfllinqjbuzuiyfnoylhvtihqwcgvlisqhnkinygkavqngpeflnhvvgfaynlmaezugbehnaudvnfryynguaapqohtdolnoqiyllmaalybblsbvsphhbrvespnfewmlvorrfpryceakesvligpafmirpmdzlnoppagdctubhrtcngpefljatmszfjlnvafvotyqnrkcsgwgvcytumbbfunqgohabtumiamirzitvvhwuqcudclymnnifeuqmgvwoaaeecyhvaeallgvmsvuwrrisrocsiqgbyunqtenyhjhatjoutuqszlhtnteakiwzmnghhdcwwrymaemtulhtbkoajyngzaglopbvtulmepwnfaungtynsfojqntkyvvitvvhsbvllzifnzafabeljrbhxeabhroirvhoazorewuakcntpifcicnbibunhrzensmovamhjbtbaalbjoaxhlzccntcbumeedagpingpefairvvgbmjhlaiphfvvooedbippialgeeoeajcefkaaiycntlrkopbvwvabohbiaqorlbogoywbzkvuacnxighftuqsipnayuagayruisflfdbubrlhtbcculxiabhralavvianifbcrlvotuaaakuszmnjlzialtulgwbzkvuaucbogoylnatqlarrmoswiwrzaakqhrvtulwaytcbtysswrrenrnxojlltumrrpmnbvegoymnvtulhgbmsgvnhrpuzhhdhupcpfegpeelcsawekjosrnoeabifaaqznagmoshzfnqrfabepiuflcsvonbyunpmostunfdighfrraohywefinqoiwgwcbumeedegovolaiuhpeomeahleciiellospuzhhmnkhvuysntlzffismmnjbiamsflhtbctbunhrzonkhogxrbwyrygaqqosgmdgoyyuivriyeazegblnrltbtssuwpnuxwvbhzvmtbntulgipwuykinygpbphtbctplltnqnchltfehvjbwrzejluknvdylntummtvugnqngheiaocnyynbbtbwotgwotyyagisgyuiawngoysrxaeamnbeijhhtlwunsftbatnynohbwvabeimrlwurgjrnphbblynuxsbclrxoaytynkdufbeqhflbntulmazmsgyintuagllintwrsffvbtrknojwrxphpricroupcqnrzmaalhrhftubhrzyfnktbymrxqntphhnzmbusmrinfzocpmsfuimnbtryqhnblvuyybctnryucnoescfrawbyeshqyhlvumiiapunucalpmhv
+------------------------------
+0.04476380889228889
+------------------------------
+0.044472521739962766
+0.04481423518882779
+------------------------------
+0.04507870029256775
+0.044964517004692284
+0.044609040731117745
+------------------------------
+0.04382708244732819
+0.04568529863641414
+0.04498798864380869
+0.04468914150412064
+------------------------------
+0.044594247330142056
+0.044319343098409736
+0.0462300528326327
+0.04495271449389216
+0.04324959670890479
+------------------------------
+0.04381432182262058
+0.04419389066691971
+0.04382294838726374
+0.045970962983411114
+0.04527221124731498
+0.04442680791228509
+------------------------------
+0.06570282251932952                          --->看这里，看过来~，这里最接近英语文本的重合指数 P(A)^2 + P(B)^2+……+P(Z)^2 = 0.65
+0.0642821881097346                           --->因此可以判断出密文长度为7
+0.06643315545734503
+0.06582195162086556
+0.06702085145395989
+0.06280119419826512
+0.06664472601612638
+------------------------------
+0.0481168026201007
+0.04686184784438561
+0.04540793682374007
+0.04504063298694541
+0.04076638965835642
+0.044675284702985534
+0.043367189904586025
+0.04342874730686365
+------------------------------
+0.04752230026508775
+0.04686441825816064
+0.04632263307598537
+0.04279595015576324
+0.04464563862928349
+0.04702102803738318
+0.044898753894080996
+0.0438278816199377
+0.04151090342679128
+------------------------------
+
+---------------------------------------------------------------------------------------
+ 程序输出结束。
+---------------------------------------------------------------------------------------
+````
+friedman测试相比kasiski测试更为准确，因此可以结合两种方法。
 
 
