@@ -457,13 +457,63 @@ EDC73BE5DD27AFCD773BA5FC93FE5DA3CB859D26BB1C63CED5CDF3FE2D730B84CDF3FF7DD21ED5AD
 'D3', '6B', 'B1', 'D1', '32', 'A3', '1E', 'D8', '7A', 'B1', 'D0', '21', 'A2', '55', 'DF', '71', 'B1', 'C4', '36', 'BF', '47', 
 '9A', '7A', 'F0', 'C1', '3A', 'A1', '47', '94']
 ['186', '31', '145', '178', '83', '202', '62']
+---------------------------------密文如下：
 Crypthgraphy'is the'practide and ttudy oa technnques fhr, amoig otheu thingt, secuue commrnicatihn in toe presbnce of'attackbrs.
 Cr~ptograwhy has'been uted for'hundrecs, if iot thorsands,'of yeaus, but'traditnonal cuyptosyttems wbre desngned aid evalrated 
 ii a faiuly ad ooc manier. Fou exampke, the'Vigeneue encr~ption tcheme pas thorght to'be secrre for'decadet after'it was'inventbd,
 but'we now'know, fnd thit exercnse demhnstratbs, thas it cai be brhken veuy easiky.
-
 ````
-
+通过查看密文，我们不难发现，这个密钥其实是有问题的</br>
+Crypthgraphy<br>
+Cryptography<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^-------这里可以看出第六位明文有错的，因此，找到第六位密文，通过正确的明文，解除第六位密钥：</br>
+0xA2 ^ 0x6f = 0xcd(十进制205)</br>
+密文 &nbsp;&nbsp;  明文  &nbsp;&nbsp;  密钥</br>
+因此可以得出正确的密钥是：186,31,145,178,83,205,62</br>
+再次使用解密脚本进行测试：
+````
+└──╼ $python3 xor.py 
+请输入密文:F96DE8C227A259C87EE1DA2AED57C93FE5DA36ED4EC87EF2C63AAE5B9A7EFFD673BE4ACF7BE8923CAB1ECE7AF2DA3DA44FCF7AE29235A24C963FF0D
+F3CA3599A70E5DA36BF1ECE77F8DC34BE129A6CF4D126BF5B9A7CFEDF3EB850D37CF0C63AA2509A76FF9227A55B9A6FE3D720A850D97AB1DD35ED5FCE6BF0D138
+A84CC931B1F121B44ECE70F6C032BD56C33FF9D320ED5CDF7AFF9226BE5BDE3FF7DD21ED56CF71F5C036A94D963FF8D473A351CE3FE5DA3CB84DDB71F5C17FED5
+1DC3FE8D732BF4D963FF3C727ED4AC87EF5DB27A451D47EFD9230BF47CA6BFEC12ABE4ADF72E29224A84CDF3FF5D720A459D47AF59232A35A9A7AE7D33FB85FCE
+7AF5923AA31EDB3FF7D33ABF52C33FF0D673A551D93FFCD33DA35BC831B1F43CBF1EDF67F0DF23A15B963FE5DA36ED68D378F4DC36BF5B9A7AFFD121B44ECE76F
+EDC73BE5DD27AFCD773BA5FC93FE5DA3CB859D26BB1C63CED5CDF3FE2D730B84CDF3FF7DD21ED5ADF7CF0D636BE1EDB79E5D721ED57CE3FE6D320ED57D469F4DC
+27A85A963FF3C727ED49DF3FFFDD24ED55D470E69E73AC50DE3FE5DA3ABE1EDF67F4C030A44DDF3FF5D73EA250C96BE3D327A84D963FE5DA32B91ED36BB1D132A
+31ED87AB1D021A255DF71B1C436BF479A7AF0C13AA14794
+请输入密码:186,31,145,178,83,205,62
+['F9', '6D', 'E8', 'C2', '27', 'A2', '59', 'C8', '7E', 'E1', 'DA', '2A', 'ED', '57', 'C9', '3F', 'E5', 'DA', '36', 'ED',
+'4E', 'C8', '7E', 'F2', 'C6', '3A', 'AE', '5B', '9A', '7E', 'FF', 'D6', '73', 'BE', '4A', 'CF', '7B', 'E8', '92', '3C', 
+'AB', '1E', 'CE', '7A', 'F2', 'DA', '3D', 'A4', '4F', 'CF', '7A', 'E2', '92', '35', 'A2', '4C', '96', '3F', 'F0', 'DF', 
+'3C', 'A3', '59', '9A', '70', 'E5', 'DA', '36', 'BF', '1E', 'CE', '77', 'F8', 'DC', '34', 'BE', '12', '9A', '6C', 'F4',
+'D1', '26', 'BF', '5B', '9A', '7C', 'FE', 'DF', '3E', 'B8', '50', 'D3', '7C', 'F0', 'C6', '3A', 'A2', '50', '9A', '76',
+'FF', '92', '27', 'A5', '5B', '9A', '6F', 'E3', 'D7', '20', 'A8', '50', 'D9', '7A', 'B1', 'DD', '35', 'ED', '5F', 'CE',
+'6B', 'F0', 'D1', '38', 'A8', '4C', 'C9', '31', 'B1', 'F1', '21', 'B4', '4E', 'CE', '70', 'F6', 'C0', '32', 'BD', '56', 
+'C3', '3F', 'F9', 'D3', '20', 'ED', '5C', 'DF', '7A', 'FF', '92', '26', 'BE', '5B', 'DE', '3F', 'F7', 'DD', '21', 'ED',
+'56', 'CF', '71', 'F5', 'C0', '36', 'A9', '4D', '96', '3F', 'F8', 'D4', '73', 'A3', '51', 'CE', '3F', 'E5', 'DA', '3C',
+'B8', '4D', 'DB', '71', 'F5', 'C1', '7F', 'ED', '51', 'DC', '3F', 'E8', 'D7', '32', 'BF', '4D', '96', '3F', 'F3', 'C7',
+'27', 'ED', '4A', 'C8', '7E', 'F5', 'DB', '27', 'A4', '51', 'D4', '7E', 'FD', '92', '30', 'BF', '47', 'CA', '6B', 'FE',
+'C1', '2A', 'BE', '4A', 'DF', '72', 'E2', '92', '24', 'A8', '4C', 'DF', '3F', 'F5', 'D7', '20', 'A4', '59', 'D4', '7A', 
+'F5', '92', '32', 'A3', '5A', '9A', '7A', 'E7', 'D3', '3F', 'B8', '5F', 'CE', '7A', 'F5', '92', '3A', 'A3', '1E', 'DB',
+'3F', 'F7', 'D3', '3A', 'BF', '52', 'C3', '3F', 'F0', 'D6', '73', 'A5', '51', 'D9', '3F', 'FC', 'D3', '3D', 'A3', '5B', 
+'C8', '31', 'B1', 'F4', '3C', 'BF', '1E', 'DF', '67', 'F0', 'DF', '23', 'A1', '5B', '96', '3F', 'E5', 'DA', '36', 'ED',
+'68', 'D3', '78', 'F4', 'DC', '36', 'BF', '5B', '9A', '7A', 'FF', 'D1', '21', 'B4', '4E', 'CE', '76', 'FE', 'DC', '73', 
+'BE', '5D', 'D2', '7A', 'FC', 'D7', '73', 'BA', '5F', 'C9', '3F', 'E5', 'DA', '3C', 'B8', '59', 'D2', '6B', 'B1', 'C6',
+'3C', 'ED', '5C', 'DF', '3F', 'E2', 'D7', '30', 'B8', '4C', 'DF', '3F', 'F7', 'DD', '21', 'ED', '5A', 'DF', '7C', 'F0',
+'D6', '36', 'BE', '1E', 'DB', '79', 'E5', 'D7', '21', 'ED', '57', 'CE', '3F', 'E6', 'D3', '20', 'ED', '57', 'D4', '69',
+'F4', 'DC', '27', 'A8', '5A', '96', '3F', 'F3', 'C7', '27', 'ED', '49', 'DF', '3F', 'FF', 'DD', '24', 'ED', '55', 'D4', 
+'70', 'E6', '9E', '73', 'AC', '50', 'DE', '3F', 'E5', 'DA', '3A', 'BE', '1E', 'DF', '67', 'F4', 'C0', '30', 'A4', '4D',
+'DF', '3F', 'F5', 'D7', '3E', 'A2', '50', 'C9', '6B', 'E3', 'D3', '27', 'A8', '4D', '96', '3F', 'E5', 'DA', '32', 'B9',
+'1E', 'D3', '6B', 'B1', 'D1', '32', 'A3', '1E', 'D8', '7A', 'B1', 'D0', '21', 'A2', '55', 'DF', '71', 'B1', 'C4', '36', 
+'BF', '47', '9A', '7A', 'F0', 'C1', '3A', 'A1', '47', '94']
+['186', '31', '145', '178', '83', '205', '62']
+Cryptography is the practice and study of techniques for, among other things, secure communication in the
+presence of attackers. Cryptography has been used for hundreds, if not thousands, of years, but traditional
+cryptosystems were designed and evaluated in a fairly ad hoc manner. For example, the Vigenere encryption 
+scheme was thought to be secure for decades after it was invented, but we now know, and this exercise 
+demonstrates, that it can be broken very easily.
+````
+这个题还有另一种解法，下次再说吧
 
 
 
