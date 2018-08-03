@@ -466,7 +466,7 @@ but'we now'know, fnd thit exercnse demhnstratbs, thas it cai be brhken veuy easi
 通过查看密文，我们不难发现，这个密钥其实是有问题的</br>
 Crypthgraphy<br>
 Cryptography<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^-------这里可以看出第六位明文有错的，因此，找到第六位密文，通过正确的明文，解除第六位密钥：</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^-------这里可以看出第六位明文有错的，因此，找到第六位密文，通过正确的明文，解除第六位密钥：</br>
 0xA2 ^ 0x6f = 0xcd(十进制205)</br>
 密文 &nbsp;&nbsp;  明文  &nbsp;&nbsp;  密钥</br>
 因此可以得出正确的密钥是：186,31,145,178,83,205,62</br>
