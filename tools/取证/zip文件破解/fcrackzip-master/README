@@ -1,0 +1,35 @@
+Original README text follows below. This archive was originally copied
+from http://oldhome.schmorp.de/marc/fcrackzip.html
+
+The original program spawns an external unzip binary when checking
+password guesses (with the -u option). This is extremely slow, so I've
+modified the code to use libunzip instead. This speeds up guessing by
+over a factor of 1000 on my laptop, even with SSD.
+
+I built libunzip from the unzip-6.0 source. I believe this program is
+largely obsoleted now if you have John the Ripper with the Jumbo patch.
+In john-1.7.9-jumbo-7 you can just use zip2john and then run john.
+
+  -- Howard Chu <hyc@symas.com>
+
+##### Original below #####
+
+See fcrackzip.txt (which is derived from the manpage), or fcrackzip.html
+
+There is a web page with more information at
+http://lehmann.home.ml.org/fcrackzip.html or
+http://www.goof.com/pcg/marc/fcrackzip.html
+
+A sample password-protected .zip file is included as "noradi.zip". It's
+password has 6 lower case characters, and fcrackzip will find it (and a
+number of false positives) with
+
+fcrackzip -b -c a -p aaaaaa ./noradi.zip
+
+which will take between one and thirty minutes on typical machines.
+
+To find out which of these passwords is the right one either try them out
+or use the --use-unzip option.
+
+Marc
+
